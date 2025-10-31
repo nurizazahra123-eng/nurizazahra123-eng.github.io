@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Form UNINDRA - Replika</title>
+  <style>
+    body {
+      background-color: yellow; /* background kuning */
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+    }.container {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: yellow;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: blue;
+  margin: 0;
+}
+
+.alamat {
+  color: red;
+  font-weight: bold;
+  animation: gerak 3s infinite alternate;
+}
+
+@keyframes gerak {
+  from { transform: translateX(-20px); }
+  to { transform: translateX(20px); }
+}
+
+hr {
+  height: 5px;
+  background-color: navy;
+  border: none;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+.simpan {
+  display: block;
+  margin: 20px auto;
+  padding: 5px 15px;
+  background-color: lightgray;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.list {
+  margin-left: 100px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="logounindra.jpg.jpeg" alt="Logo UNINDRA" width="80" /><br>
+      <h1>UNIVERSITAS INDRAPRASTA PGRI<br/> (UNINDRA)</h1>
+      <div class="alamat">Jl. Nangka No.58 Tanjung Barat - Jaksel</div>
+    </header><hr>
+
+<table>
+  <tr>
+    <td>Nama</td>
+    <td>:</td>
+    <td><input type="text" placeholder="Nuriza Zahra"></td>
+  </tr>
+  <tr>
+    <td>NPM</td>
+    <td>:</td>
+    <td><input type="text" placeholder="202433500307"></td>
+  </tr>
+</table>
+
+<div class="list">
+  <b>FTIK:</b><br>
+  A. Informatika<br>
+  B. Teknik Arsitektur<br>
+  C. Teknik Industri<br><br>
+  <b>MIPA:</b><br>
+  I. Matematika<br>
+  II. Fisika<br>
+  III. Biologi<br>
+</div>
+
+<button class="simpan">SIMPAN</button>
+
+  </div>
+</body>
+</html>
