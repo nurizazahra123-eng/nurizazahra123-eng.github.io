@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Biodata Mahasiswa</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 650px;
+            margin: auto;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            border: 1px solid #000;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .header-text h3,
+        .header-text h4,
+        .header-text p {
+            margin: 2px;
+        }
+
+        .line {
+            border: 1.5px solid #000080;
+            margin-top: 5px;
+            width: 100%;
+        }
+
+        
+        .judul {
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        
+        .form {
+            margin-top: 20px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+
+        label {
+            width: 150px;
+            font-weight: bold;
+        }
+
+        span {
+            margin-right: 5px;
+        }
+
+        .input-text {
+            width: 300px;
+            height: 25px;
+        }
+
+        .area {
+            height: 40px;
+        }
+
+        .kecil {
+            width: 200px;
+        }
+
+        .tombol-area {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 5px 20px;
+            margin: 3px;
+            border: 1px solid black;
+            background: #dcdcdc;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <img src="https://d.top4top.io/p_3584ov6ka0.png" class="logo">
+
+
+        <div class="header-text">
+            <h3><b>UNIVERSITAS INDRAPRASTA PGRI</b></h3>
+            <h4><i>(UNINDRA)</i></h4>
+            <p><i>Jl. Nangka No.58 Tanjung Barat - Jaksel</i></p>
+            <hr class="line">
+        </div>
+    </div>
+
+    <h3 class="judul"><b>BIODATA MAHASISWA</b></h3>
+
+    <form class="form">
+
+        <div class="row">
+            <label>NAMA</label><span> : </span>
+            <input type="text" class="input-text">
+        </div>
+
+        <div class="row">
+            <label>ALAMAT</label><span> : </span>
+            <textarea class="input-text area"></textarea>
+        </div>
+
+        <div class="row">
+            <label>TANGGAL LAHIR</label><span> : </span>
+            <input type="text" placeholder="mm/dd/yyyy" class="input-text kecil">
+        </div>
+
+        <div class="row">
+            <label>TELP</label><span> : </span>
+            <input type="text" class="input-text kecil">
+        </div>
+
+        <div class="row">
+            <label>EMAIL</label><span> : </span>
+            <input type="text" class="input-text kecil">
+        </div>
+
+        <div class="tombol-area">
+            <button type="submit" class="btn">SIMPAN</button>
+            <button type="reset" class="btn">BATAL</button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
