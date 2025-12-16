@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Hitung Volume Bangun Ruang</title>
+    <script>
+        function hitungBalok() {
+            let p = parseFloat(prompt("Masukkan Panjang:"));
+            let l = parseFloat(prompt("Masukkan Lebar:"));
+            let t = parseFloat(prompt("Masukkan Tinggi:"));
+            let volume = p * l * t;
+            alert("Volume Balok = " + volume);
+        }
+
+        function hitungTabung() {
+            let r = parseFloat(prompt("Masukkan Jari-jari:"));
+            let t = parseFloat(prompt("Masukkan Tinggi:"));
+            let volume = 3.14 * r * r * t;
+            alert("Volume Tabung = " + volume);
+        }
+
+        function hitungBola() {
+            let r = parseFloat(prompt("Masukkan Jari-jari:"));
+            let volume = 3.14 * r * r * r;
+            alert("Volume Bola = " + volume);
+        }
+
+        function hitungPrismaSegitiga() {
+            let tinggiAlas = parseFloat(prompt("Masukkan Tinggi Alas:"));
+            let panjangAlas = parseFloat(prompt("Masukkan Panjang Alas:"));
+            let tinggiPrisma = parseFloat(prompt("Masukkan Tinggi Prisma:"));
+            let volume = 0.5 * tinggiAlas * panjangAlas * tinggiPrisma;
+            alert("Volume Prisma Segitiga = " + volume);
+        }
+
+        function hitungKerucut() {
+            let r = parseFloat(prompt("Masukkan Jari-jari Alas:"));
+            let t = parseFloat(prompt("Masukkan Tinggi Kerucut:"));
+            let volume = (1/3) * 3.14 * r * r * t;
+            alert("Volume Kerucut = " + volume);
+        }
+    </script>
+</head>
+<body>
+    <h2>Hitung Volume Bangun Ruang</h2>
+
+    <button onclick="hitungBalok()">Balok</button><br><br>
+    <button onclick="hitungTabung()">Tabung</button><br><br>
+    <button onclick="hitungBola()">Bola</button><br><br>
+    <button onclick="hitungPrismaSegitiga()">Prisma Segitiga</button><br><br>
+    <button onclick="hitungKerucut()">Kerucut</button>
+</body>
+</html>
