@@ -1,0 +1,64 @@
+/* Pengaturan Umum */
+body {
+    font-family: "Times New Roman", serif;
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+/* Header */
+.header-container {
+    text-align: center;
+}
+
+.univ-title {
+    font-size: 24pt;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Tabel Jadwal */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 95%;
+}
+
+th, td {
+    border: 1px solid #888;
+    padding: 10px;
+    text-align: center;
+}
+
+th { font-weight: bold; }
+
+/* Warna Kolom Sesuai Soal */
+.waktu { background-color: #d3d3d3; font-weight: bold; width: 140px; }
+.senin { background-color: #f8c3bf; }
+.selasa { background-color: #c6f6c6; }
+.rabu { background-color:#c9b6e4; }
+.kamis { background-color: #f7e6a1; }
+.istirahat { background-color: #d3d3d3; }
+
+/* Navigasi */
+.nav-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer-text {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
