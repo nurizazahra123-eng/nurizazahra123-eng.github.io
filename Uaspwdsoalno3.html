@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hitung Gaji Karyawan</title>
+<style>
+body{
+    font-family: Arial;
+}
+table{
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+td{
+    border: 1px solid black;
+    padding: 10px;
+    vertical-align: top;
+}
+h3{
+    text-align: center;
+    margin: 5px 0;
+}
+input{
+    width: 150px;
+}
+button{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<table>
+<tr>
+    <td colspan="2" align="center">
+        <b>Hitung Gaji Karyawan</b>
+    </td>
+</tr>
+
+<tr>
+    <!-- INPUT -->
+    <td width="300">
+        <h3>INPUTAN</h3>
+        Gaji Pokok (Rp): <br>
+        <input type="number" id="gaji"><br><br>
+
+        Jumlah Jam Lembur: <br>
+        <input type="number" id="lembur"><br><br>
+
+        <button onclick="hitung()">Hitung Gaji</button>
+    </td>
+
+    <!-- OUTPUT -->
+    <td width="300">
+        <h3>OUTPUT</h3>
+        <div id="hasil">
+            Gaji Pokok : <br>
+            Total Gaji Lembur : <br>
+            Gaji Kotor : <br>
+            Pajak : <br>
+            Gaji Bersih :
+        </div>
+    </td>
+</tr>
+</table>
+
+<script>
+function hitung(){
+    let gaji = parseInt(document.getElementById("gaji").value);
+    let lembur = parseInt(document.getElementById("lembur").value);
+
+    let totalLembur = lembur * 20000;
+    let gajiKotor = gaji + totalLembur;
+    let pajak;
+
+    if(gajiKotor < 5000000){
+        pajak = gajiKotor * 0.05;
+    }else if(gajiKotor <= 10000000){
+        pajak = gajiKotor * 0.10;
+    }else{
+        pajak = gajiKotor * 0.15;
+    }
+
+    let gajiBersih = gajiKotor - pajak;
+
+    document.getElementById("hasil").innerHTML =
+        "Gaji Pokok : Rp " + gaji + "<br>" +
+        "Total Gaji Lembur : Rp " + totalLembur + "<br>" +
+        "Gaji Kotor : Rp " + gajiKotor + "<br>" +
+        "Pajak : Rp " + pajak + "<br>" +
+        "<b>Gaji Bersih : Rp " + gajiBersih + "</b>";
+}
+</script>
+
+</body>
+</html>
